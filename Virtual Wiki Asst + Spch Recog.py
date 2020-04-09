@@ -2,7 +2,7 @@
 """
 Created on Thu Apr  9 14:44:44 2020
 
-@author: Shivam
+@author: Vk
 """
 #((pip install SpeechRecognition #for installing SR))
 #((pip install pipwin
@@ -15,7 +15,7 @@ import wx
 import wikipedia
 
 
-class MyFrame(wx.Frame):
+class MyFrame(wx.Frame):  #wx helps create a great GUI text input window --> customizable
     def __init__(self):
         wx.Frame.__init__(self, None,
             pos=wx.DefaultPosition, size=wx.Size(450, 100),
@@ -39,7 +39,7 @@ class MyFrame(wx.Frame):
         input = input.lower()
         if input == '':
             r = sr.Recognizer()
-            with sr.Microphone() as source:
+            with sr.Microphone() as source:   #This is why pyaudio is requred
                 audio = r.listen(source)
             try:
                 self.txt.SetValue(r.recognize_google(audio))
