@@ -1,6 +1,6 @@
 # TheBeginning
 
-In this repository I shall be including all the begineer level projects that I would complete in a day or two.
+In this repository I shall be including all the beginner level projects that I would complete in a day or two.
 Currently it includes the following :
 
 1) Virtual Assistant -
